@@ -80,7 +80,6 @@ if data_inicial and data_final:
                                                     (st.session_state.df_sales['Status_Financeiro']=='A Faturar') & 
                                                     (st.session_state.df_sales['Status_do_Servico']!='CANCELADO') & 
                                                     (st.session_state.df_sales['Status_do_Servico']!='RASCUNHO') &
-                                                    (st.session_state.df_sales['Status da Reserva']!='RASCUNHO') &
                                                     ~(pd.isna(st.session_state.df_sales['Status da Reserva'])) & 
                                                     (pd.isna(st.session_state.df_sales['Data Delecao']))]\
         .reset_index(drop=True) 
